@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/WebONG.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" id="logo">
+        </div>
+        <nav>
+            <ul class="horizontal">
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="activitats.html">Activitats</a>
+                    <ul class="vertical">
+                        <li><a href="activitats/histories.html">Històries de superació</a></li>
+                        <li><a href="activitats/alianca.html">Aliances</a></li>
+                        <li><a href="activitats/impacte.html">Impacte de l'ONG</a></li>
+                </li>
+            </ul>
+            <li><a href="novetats.html">Novetats</a>
+                <ul class="vertical">
+                    <li><a href="novetats/nousHerois.html">Nous herois ajudats</a></li>
+                    <li><a href="novetats/recaudem.html">Recaudem!</a></li>
+                    <li><a href="novetats/visitaSpiderman.html">Spider-man ens visita!!!</a></li>
+                </ul>
+            </li>
+            <li><a href="perfils.html">Perfils</a>
+            <li><a href="agraiments.html">Agraïments</a></li>
+            <li><a href="associat.html">Associa't</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center">
+        <h1>ASSOCIA'T</h1>
+    </div>
+    <form class="formulari">
+        <h2>Formulari</h2>
+        <div class="input">
+            <p><label for="tracte" >Tracte: </label></p>
+            <select name="tracte" id="tracte">
+            <option value="sr">Sr.</option>
+            <option value="sra">Sra.</option>
+            <option value="null"></option>
+        </select>
+        </div>
+            <div class="input">
+                <p><label for="nom">Nom:</label></p>
+                <input type="text" name="nom" id="nom" placeholder="Insereix el teu Nom">
+            </div>
+            <div class="input">
+                <p><label for="cognom">Cognom:</label></p>
+                <input type="text" name="cognom" id="cognom" placeholder="Insereix el teu Cognom" maxlength="25">
+            </div>
+            <div class="input">
+                <p><label for="DNI">DNI:</label></p>
+                <input type="text" name="DNI" id="DNI" placeholder="Insereix el teu DNI">
+            </div>
+            <div class="input">
+                <p><label for="correu">Correu:</label></p>
+                <input type="email" name="correu" id="correu" placeholder="Insereix el teu Correu">
+            </div>
+            <div class="input">
+                <p><label for="direccio">Direcció:</label></p>
+                <input type="text" name="direccio" id="direccio" placeholder="Insereix la teva direcció">
+            </div>
+            <div class="input">
+                <p><label for="cp">Codi Postal:</label></p>
+                <input type="text" name="cp" id="cp" placeholder="Insereix el teu codi postal">
+            </div>
+            <div class="input">
+                <p><label for="data">Data naixement:</label></p>
+                <input type="date" name="data" id="data">
+            </div>
+            <div class="input">
+                <p><label for="donacio" >Donació: </label></p>
+                <select name="donacio" id="donacio">
+                <option value="10eur">10€</option>
+                <option value="30eur">30€</option>
+                <option value="50eur">50€</option>
+                <option value="100eur">100€</option>
+            </select>
+            </div>
+            <div class="input">
+                <input type="radio" id="acceptar" name="acceptar" required>
+                <label for="acceptar">Acceptar la política de privacitat</label>
+            </div>
+            <div class="input" >
+                <input type="checkbox" name="notificacions" id="notificacions">
+                <label for="notificacions">Subscripció a Newsletter</label>
+            </div>
+            <div class="input">
+                <p><label class="temes" >Temes d'interés:</label></p>
+                <input type="checkbox" name="voluntariat" id="voluntariat">
+                <label for="voluntariat">Voluntariat</label>
+                <input type="checkbox" name="events" id="events">
+                <label for="events">Events</label>
+                <input type="checkbox" name="activitats" id="activitats">
+                <label  for="activitats">Activitats</label>
+            </div>
+            <div class="input">
+                <input type="submit" value="Enviar">
+            </div>
+    </form>
+    <div class="direccio">
+        <p>
+            C/ Evergreen Terrace 250, 5é, 8a, 08080 Barcelona 930000000
+        </p>
+
+    </div>
+    </div>
+    <footer>
+        <ul class="footerHorizontal">
+            <li>© 2024 SuperONG</li>
+            <li>Avís legal</li>
+            <li>Política de privacitat</li>
+            <li>Política de cookies</li>
+            <li>Informació de socis</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

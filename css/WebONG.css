@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*GENERAL*/
+
+body {
+   background-image: url(../img/fons.jpg);
+   background-repeat: no-repeat;
+   background-size: 100vw 100vh;
+   background-attachment: fixed;
+
+}
+
+/*HEADER*/
+
+header {
+
+    background-color: rgba(0, 0, 0, 0.853);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 100px;
+}
+
+#logo {
+    width: 200px;
+    margin-bottom: 0px;
+    justify-content: center;
+    
+}
+
+nav {
+    max-width: 2200px;
+    margin: auto;
+    font-size: 20px;
+    padding: 30px 50px 30px 50px;
+    display: inline-block;
+}
+
+.horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal > li{
+    padding-right:30px ;
+    padding-left:30px ;
+    border-right: 1px solid white;
+}
+
+.horizontal > li:nth-child(6){
+    border-right: none;
+}
+
+
+
+.horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.horizontal li:hover {
+
+    background-color: red ;
+}
+
+.vertical {
+    position: absolute;
+    list-style: none;
+    display: none;
+    width: 200px ;
+    background-color:rgba(128, 0, 128, 0.493);
+}
+
+.horizontal li:hover .vertical {
+    display: block;
+}
+
+.vertical li:hover{
+    background-color: purple;
+}
+
+.vertical > li > a {
+    display: block;
+    padding: 15px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.center {
+    
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.separacio {
+
+margin-right: 110px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+/*IMATGES*/
+
+.rodona {
+
+    border-radius: 10px;
+
+    }
+
+/*TITOL*/
+
+h1 {
+
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 100px;
+
+}
+
+h2 {
+    
+    font-size: 30px;
+
+}
+
+/*MAIN*/
+
+hr {
+
+    border: 3px solid rgba(128, 0, 128, 0.493);
+    border-radius: 5px;
+
+}
+
+.portada {
+
+width: 800px;
+margin-top: 50px;
+margin-bottom: 50px;
+border-radius: 20px;
+
+}
+
+.intro  {
+
+font-size: 20px;  
+padding-left: 150px;
+padding-right: 150px;
+text-align: justify;
+padding-bottom: 20px;
+font-weight: 700;
+
+}
+
+.intro > p {
+
+    margin: 30px;
+    line-height: 1.5em;
+}
+
+.llistes{
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+
+
+}
+
+.llistes > ul {
+
+    font-size: 40px;    
+    margin: 20px;
+    display: inline;
+    
+    
+}   
+
+.llistes > ul > li {
+
+    font-size: 30px;
+    display: block;
+    margin: 30px;
+    
+}
+
+.subratllat {
+
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.activitats_index {
+
+
+padding-right: 90px ;
+padding-left: 50px;
+
+
+
+}
+
+.fotosfinal {
+
+    margin: 40px;
+    text-align: center;
+
+}
+
+.fotosfinal > img {
+
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 300px;
+}
+
+
+/*ACTIVITATS*/
+
+.activitats {
+
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    font-size: 18px; 
+    font-weight: 400;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+ h3 {
+
+margin-bottom: 10px;
+
+}
+
+
+.imatge_activitat {
+
+    width: 360px;
+    margin: 0;
+     
+}
+
+.tarjeta {
+
+
+border-radius: 6px;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+transition: all 400ms ease;
+margin: 0;
+width: 360px;
+}
+
+
+
+.tarjeta:hover {
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+
+}
+
+.boto {
+
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color:white;
+    border: 2px solid purple;
+    border-radius: 4px;
+    width: 180px;
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.514);
+
+}
+
+.rodona, .imatge_activitat {
+
+margin: 0;
+
+}
+
+/*TAULA RODONA, ALIANÇA, IMPACTE*/ 
+
+.center > p {
+
+    font-size: 20px;  
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+    padding-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.peter {
+
+margin: 20px;
+
+}
+
+.imatge_alianca {
+
+    width: 512px;
+    height: 334px;
+    border-radius: 8px;
+    margin: 15px;
+
+}
+
+.impacte {
+
+display: block;
+justify-content: center;
+font-size: 20px;  
+padding-left: 150px;
+padding-right: 150px;
+text-align: justify;
+padding-bottom: 20px;
+font-weight: 700;
+
+
+}
+
+.imatge_impacte1 {
+
+    width: 512px;
+    height: 334px;
+    float: left;
+    margin: 20px;
+    border-radius: 8px;
+
+    
+}
+
+.imatge_impacte2 {
+
+    width: 512px;
+    height: 334px;
+    float: right;
+    margin: 20px;
+    border-radius: 8px;
+
+
+}
+
+.impacte > p {
+
+    margin: 50px;
+    padding-top: 30px;
+
+}
+
+.imatge_impacte {
+
+    display: inline-block;
+    width: 512px;
+    height: 330px;
+    border-radius: 8px;
+    margin: 8px;
+    
+
+}
+
+
+
+/*NOVETATS*/    
+
+.fila {
+display: flex; 
+margin: 30px;
+margin-bottom: 500px;
+
+}
+
+.imatge_novetat {
+
+width: 250px;
+
+}
+
+.text_novetat {
+
+margin-top: 70px;
+text-align: left;
+margin-left: 20px;
+
+}
+
+.text_novetat > h3 {
+    
+margin-left: 50px;
+
+}
+
+.text_novetat > p {
+
+margin-bottom: 10px;
+margin-left: 50px;
+margin-right: 50px;
+
+}
+
+.tarjeta2 {
+
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    margin: 20px;
+    height: 250px;
+
+}
+
+.tarjeta2:hover {
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+
+}
+
+.boto2 {
+
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 4px;
+    width: 180px;
+    text-align: center;
+    margin-left: 400px;
+    background-color: rgba(128, 0, 128, 0.514);
+
+}
+
+/* HEROIS AJUDATS, RECAUDEM, VISITA SPIDER-MAN*/ 
+
+
+.imatge2 {
+
+margin: 20px;
+
+}
+
+.llista_recaudem {
+
+    font-size: 20px;  
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: justify;
+    padding-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.llista_recaudem > li {
+
+margin: 20px;
+
+}
+
+iframe {
+
+margin: 40px;
+border-radius: 8px;
+
+}
+
+/*PERFILS*/
+
+.carta {
+
+
+    display: inline-block;
+    width: 400px;
+    height: 560px;
+    width: 400px;
+    height: 560px;
+    margin: 30px;
+    padding-left: 20px;
+    
+
+}
+
+.cara {
+
+  position: absolute;  
+  transition: 1s;
+
+}
+
+.darrere {
+
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 400px;
+    height: 560px;
+    color: aliceblue;
+    backface-visibility: hidden;
+    
+}
+
+.darrere > p {
+
+margin: 20px;
+padding-top: 20px;
+}
+
+.carta:hover .davant {
+
+    transform: perspective(600px) rotateY(180deg);
+
+}
+
+.carta:hover .darrere {
+
+    transform: perspective(600px) rotateY(360deg);
+
+}
+
+.imatge_perfil {
+
+    width: 400px;
+    height: 560px;
+
+}
+
+/*AGRAÏMENTS*/
+
+.carrusel {
+
+margin: 50px;
+overflow: hidden;
+width: 612px;
+height: 408px;
+text-align: center;
+display: inline-block;
+
+}
+
+.carrusel > ul {
+
+display: flex;
+width: 400%;
+animation: slide 10s infinite alternate ease-in-out;
+
+}
+
+.carrusel > ul > li {
+
+    list-style: none;
+    position: relative;
+
+}
+
+.carrusel > ul > li > img {
+
+width: 612px;
+height: 408px;
+border-radius: 8px;
+
+}
+
+@keyframes slide {
+
+0% { margin-left: 0;}
+20% { margin-left: 0;}
+
+25% { margin-left: -100%;}
+45% { margin-left: -100%;}
+
+50% { margin-left: -200%;}
+70% { margin-left: -200%;}
+
+75% { margin-left: -300%;}
+100% { margin-left: -300%;}
+
+}
+
+/*FORMULARI*/
+
+
+.formulari {
+
+    margin-top: 20PX;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgba(0, 255, 255, 0.765);
+    border-radius: 20px;
+    text-align:left;
+    padding-left: 550px;
+   
+}
+
+.formulari > h2 {
+
+padding-left: 27px;
+
+}
+
+.input {
+
+margin: 15px;
+
+}
+
+.input > p {
+
+padding-bottom: 10px;
+
+}
+
+.temes {
+
+display: block;
+padding-bottom: 20px;
+
+}
+
+/*ENLLAÇOS*/
+
+.enllacos > h2 {
+
+padding-top: 20px;
+
+}
+
+.enllacos > p {
+
+font-size: 20px;  
+text-align: center;
+padding-bottom: 20px;
+font-weight: 700;
+
+}
+
+.enllacos ul > li > a {
+
+text-decoration: none;
+font-size: 30px; 
+
+}
+
+.enllacos ul > li{
+
+    display: inline-block;
+    margin: 20px;
+    
+    }
+
+/*FOOTER*/
+
+
+.direccio {
+text-align: center;
+margin-bottom: 20px;
+margin-top: 20px;
+
+}
+
+footer {
+
+    background-color: rgba(0, 0, 0, 0.853);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.footerHorizontal{
+
+list-style: none;
+justify-content: center;
+display: flex;
+
+}
+
+.footerHorizontal > li {
+
+margin-right: 50px;
+
+}
+
+.center, .llistes, .direccio  {
+
+    background-color: rgba(0, 255, 255, 0.765);
+    border-radius: 20px;
+    width: 95%;
+    margin-left: 35px;  
+}
+
+
+
+
+
+
+
+
+
+
